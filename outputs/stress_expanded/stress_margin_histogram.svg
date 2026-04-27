@@ -1,0 +1,13 @@
+<svg width="760" height="280" viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<text x="44" y="28" font-family="Arial" font-size="18" font-weight="700">Stress-Case Robustness Margins</text>
+<rect x="44.0" y="150.7" width="110.0" height="85.3" fill="#b91c1c"/>
+<rect x="156.0" y="236.0" width="110.0" height="0.0" fill="#b91c1c"/>
+<rect x="268.0" y="150.7" width="110.0" height="85.3" fill="#b91c1c"/>
+<rect x="380.0" y="65.3" width="110.0" height="170.7" fill="#b91c1c"/>
+<rect x="492.0" y="86.7" width="110.0" height="149.3" fill="#b91c1c"/>
+<rect x="604.0" y="44.0" width="110.0" height="192.0" fill="#b91c1c"/>
+<line x1="44" y1="236" x2="716" y2="236" stroke="#1f2937"/>
+<text x="44" y="268" font-family="Arial" font-size="12">-208.07</text>
+<text x="624" y="268" font-family="Arial" font-size="12">64.98</text>
+</svg>

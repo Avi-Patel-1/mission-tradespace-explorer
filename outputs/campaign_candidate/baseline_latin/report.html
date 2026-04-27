@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mission Performance Report</title>
+<style>
+body{font-family:Arial,sans-serif;margin:32px;line-height:1.45;color:#17202a;max-width:1120px}
+table{border-collapse:collapse;margin:12px 0 24px 0}td,th{border-bottom:1px solid #ddd;padding:7px 12px;text-align:left}
+.kpi{display:inline-block;margin:0 24px 16px 0}.kpi strong{display:block;font-size:24px}pre{background:#f7f7f7;padding:12px;overflow:auto}
+svg{max-width:100%;height:auto;border:1px solid #e5e7eb;margin:10px 0}
+</style>
+</head>
+<body>
+<h1>Mission Performance Report</h1>
+<div class="kpi"><span>Runs</span><strong>32</strong></div>
+<div class="kpi"><span>Success rate</span><strong>81.2%</strong></div>
+<div class="kpi"><span>Median miss</span><strong>24.85 m</strong></div>
+<div class="kpi"><span>95th pct qbar</span><strong>158467 Pa</strong></div>
+<svg width="760" height="280" viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<text x="44" y="28" font-family="Arial" font-size="18" font-weight="700">Miss Distance Distribution</text>
+<rect x="44.0" y="44.0" width="110.0" height="192.0" fill="#2563eb"/>
+<rect x="156.0" y="236.0" width="110.0" height="0.0" fill="#2563eb"/>
+<rect x="268.0" y="236.0" width="110.0" height="0.0" fill="#2563eb"/>
+<rect x="380.0" y="236.0" width="110.0" height="0.0" fill="#2563eb"/>
+<rect x="492.0" y="213.8" width="110.0" height="22.2" fill="#2563eb"/>
+<rect x="604.0" y="213.8" width="110.0" height="22.2" fill="#2563eb"/>
+<line x1="44" y1="236" x2="716" y2="236" stroke="#1f2937"/>
+<text x="44" y="268" font-family="Arial" font-size="12">6.62</text>
+<text x="624" y="268" font-family="Arial" font-size="12">288.97</text>
+</svg>
+<svg width="760" height="280" viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<text x="44" y="28" font-family="Arial" font-size="18" font-weight="700">Max Dynamic Pressure Distribution</text>
+<rect x="44.0" y="159.2" width="110.0" height="76.8" fill="#7c3aed"/>
+<rect x="156.0" y="178.4" width="110.0" height="57.6" fill="#7c3aed"/>
+<rect x="268.0" y="159.2" width="110.0" height="76.8" fill="#7c3aed"/>
+<rect x="380.0" y="44.0" width="110.0" height="192.0" fill="#7c3aed"/>
+<rect x="492.0" y="101.6" width="110.0" height="134.4" fill="#7c3aed"/>
+<rect x="604.0" y="159.2" width="110.0" height="76.8" fill="#7c3aed"/>
+<line x1="44" y1="236" x2="716" y2="236" stroke="#1f2937"/>
+<text x="44" y="268" font-family="Arial" font-size="12">126758.55</text>
+<text x="624" y="268" font-family="Arial" font-size="12">159468.09</text>
+</svg>
+<svg width="760" height="320" viewBox="0 0 760 320" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<text x="56" y="28" font-family="Arial" font-size="18" font-weight="700">Sensitivity Tornado</text>
+<line x1="395.2" y1="48" x2="395.2" y2="274" stroke="#6b7280"/>
+<text x="56" y="68" font-family="Arial" font-size="12">guidance_gain</text>
+<rect x="395.2" y="56" width="243.2" height="14" fill="#b91c1c" fill-opacity="0.82"/>
+<text x="56" y="90" font-family="Arial" font-size="12">sensor_bias_z_m</text>
+<rect x="360.8" y="78" width="34.4" height="14" fill="#1d4ed8" fill-opacity="0.82"/>
+<text x="56" y="112" font-family="Arial" font-size="12">sensor_bias_x_m</text>
+<rect x="379.9" y="100" width="15.3" height="14" fill="#1d4ed8" fill-opacity="0.82"/>
+<text x="56" y="134" font-family="Arial" font-size="12">drag_cd</text>
+<rect x="395.2" y="122" width="20.5" height="14" fill="#b91c1c" fill-opacity="0.82"/>
+<text x="56" y="156" font-family="Arial" font-size="12">sensor_noise_m</text>
+<rect x="395.2" y="144" width="4.1" height="14" fill="#b91c1c" fill-opacity="0.82"/>
+<text x="56" y="178" font-family="Arial" font-size="12">wind_z_mps</text>
+<rect x="394.7" y="166" width="0.5" height="14" fill="#1d4ed8" fill-opacity="0.82"/>
+<text x="56" y="200" font-family="Arial" font-size="12">thrust_n</text>
+<rect x="383.2" y="188" width="12.0" height="14" fill="#1d4ed8" fill-opacity="0.82"/>
+<text x="56" y="222" font-family="Arial" font-size="12">mass_kg</text>
+<rect x="395.2" y="210" width="10.2" height="14" fill="#b91c1c" fill-opacity="0.82"/>
+<text x="56" y="244" font-family="Arial" font-size="12">wind_x_mps</text>
+<rect x="395.2" y="232" width="0.0" height="14" fill="#1d4ed8" fill-opacity="0.82"/>
+</svg>
+<h2>Failure Reasons</h2>
+<table><tr><th>Reason</th><th>Count</th><th>Fraction</th></tr><tr><td>none</td><td>26</td><td>81.2%</td></tr><tr><td>ground_intercept</td><td>6</td><td>18.8%</td></tr></table>
+<h2>Top Sensitivities</h2>
+<table><tr><th>Parameter</th><th>Rank</th><th>Partial rank</th><th>Success</th><th>Variance proxy</th></tr><tr><td>guidance_gain</td><td>+0.655</td><td>+0.799</td><td>-0.583</td><td>0.399</td></tr><tr><td>sensor_bias_z_m</td><td>-0.607</td><td>-0.741</td><td>+0.411</td><td>0.216</td></tr><tr><td>sensor_bias_x_m</td><td>-0.402</td><td>-0.014</td><td>+0.460</td><td>0.244</td></tr><tr><td>drag_cd</td><td>+0.263</td><td>+0.216</td><td>-0.129</td><td>0.025</td></tr><tr><td>sensor_noise_m</td><td>-0.103</td><td>+0.295</td><td>+0.282</td><td>0.095</td></tr><tr><td>wind_z_mps</td><td>+0.207</td><td>+0.336</td><td>-0.087</td><td>0.006</td></tr><tr><td>thrust_n</td><td>-0.145</td><td>-0.472</td><td>+0.011</td><td>0.002</td></tr><tr><td>mass_kg</td><td>+0.052</td><td>+0.028</td><td>-0.092</td><td>0.011</td></tr><tr><td>wind_x_mps</td><td>+0.075</td><td>-0.058</td><td>+0.023</td><td>0.001</td></tr></table>
+<h2>Summary JSON</h2><pre>{
+  &quot;runs&quot;: 32,
+  &quot;success_rate&quot;: 0.8125,
+  &quot;metrics&quot;: {
+    &quot;miss_distance_m&quot;: {
+      &quot;min&quot;: 6.618137788886608,
+      &quot;p01&quot;: 8.476892608598668,
+      &quot;p05&quot;: 12.803135317232709,
+      &quot;p50&quot;: 24.849496390094394,
+      &quot;p95&quot;: 273.07788104888806,
+      &quot;p99&quot;: 285.87362805100736,
+      &quot;max&quot;: 288.97096420047365,
+      &quot;mean&quot;: 65.87391395510667,
+      &quot;std&quot;: 92.52509255657138
+    },
+    &quot;max_qbar_pa&quot;: {
+      &quot;min&quot;: 126758.5541458623,
+      &quot;p01&quot;: 127226.20132126944,
+      &quot;p05&quot;: 128994.01595719965,
+      &quot;p50&quot;: 145095.870736308,
+      &quot;p95&quot;: 158467.14827619056,
+      &quot;p99&quot;: 159260.57051982585,
+      &quot;max&quot;: 159468.09244559865,
+      &quot;mean&quot;: 144953.61344169494,
+      &quot;std&quot;: 8610.496618935447
+    },
+    &quot;max_load_g&quot;: {
+      &quot;min&quot;: 4.631993882484919,
+      &quot;p01&quot;: 4.690564934276502,
+      &quot;p05&quot;: 4.83551391749625,
+      &quot;p50&quot;: 5.29343423846762,
+      &quot;p95&quot;: 9.649793907959333,
+      &quot;p99&quot;: 9.740145733749241,
+      &quot;max&quot;: 9.750532690012527,
+      &quot;mean&quot;: 6.382520466174238,
+      &quot;std&quot;: 1.7619656243173143
+    },
+    &quot;terminal_speed_mps&quot;: {
+      &quot;min&quot;: 314.20589478753186,
+      &quot;p01&quot;: 315.4569631561736,
+      &quot;p05&quot;: 325.94599689883796,
+      &quot;p50&quot;: 504.7579792852619,
+      &quot;p95&quot;: 532.1493900981677,
+      &quot;p99&quot;: 535.7588597968191,
+      &quot;max&quot;: 536.5011952447513,
+      &quot;mean&quot;: 452.7686603638058,
+      &quot;std&quot;: 86.06835539379716
+    },
+    &quot;time_of_flight_s&quot;: {
+      &quot;min&quot;: 8.349999999999984,
+      &quot;p01&quot;: 8.349999999999984,
+      &quot;p05&quot;: 8.404999999999985,
+      &quot;p50&quot;: 8.949999999999992,
+      &quot;p95&quot;: 11.62250000000003,
+      &quot;p99&quot;: 11.822500000000034,
+      &quot;max&quot;: 11.900000000000034,
+      &quot;mean&quot;: 9.671875000000004,
+      &quot;std&quot;: 1.2481196795079568
+    },
+    &quot;robustness_margin&quot;: {
+      &quot;min&quot;: -58.970964200473645,
+      &quot;p01&quot;: -55.87362805100736,
+      &quot;p05&quot;: -43.07788104888809,
+      &quot;p50&quot;: 49.0746963177796,
+      &quot;p95&quot;: 65.56963310059311,
+      &quot;p99&quot;: 71.74874256544014,
+      &quot;max&quot;: 73.2414458541377,
+      &quot;mean&quot;: 37.98068920321843,
+      &quot;std&quot;: 33.427442509545926
+    }
+  },
+  &quot;miss_distance_m&quot;: {
+    &quot;min&quot;: 6.618137788886608,
+    &quot;p01&quot;: 8.476892608598668,
+    &quot;p05&quot;: 12.803135317232709,
+    &quot;p50&quot;: 24.849496390094394,
+    &quot;p95&quot;: 273.07788104888806,
+    &quot;p99&quot;: 285.87362805100736,
+    &quot;max&quot;: 288.97096420047365,
+    &quot;mean&quot;: 65.87391395510667,
+    &quot;std&quot;: 92.52509255657138
+  },
+  &quot;max_qbar_pa&quot;: {
+    &quot;min&quot;: 126758.5541458623,
+    &quot;p01&quot;: 127226.20132126944,
+    &quot;p05&quot;: 128994.01595719965,
+    &quot;p50&quot;: 145095.870736308,
+    &quot;p95&quot;: 158467.14827619056,
+    &quot;p99&quot;: 159260.57051982585,
+    &quot;max&quot;: 159468.09244559865,
+    &quot;mean&quot;: 144953.61344169494,
+    &quot;std&quot;: 8610.496618935447
+  },
+  &quot;failure_reasons&quot;: [
+    {
+      &quot;failure_reason&quot;: &quot;none&quot;,
+      &quot;count&quot;: 26,
+      &quot;fraction&quot;: 0.8125
+    },
+    {
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;count&quot;: 6,
+      &quot;fraction&quot;: 0.1875
+    }
+  ],
+  &quot;top_sensitivities&quot;: [
+    {
+      &quot;parameter&quot;: &quot;guidance_gain&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: 0.6052445721846421,
+      &quot;rank_correlation&quot;: 0.6554252199413488,
+      &quot;partial_rank_correlation&quot;: 0.7991352389752631,
+      &quot;success_correlation&quot;: -0.5833965537829168,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: 0.5833965537829168,
+      &quot;tornado_low&quot;: 17.267443269915823,
+      &quot;tornado_high&quot;: 131.4576828438402,
+      &quot;tornado_delta&quot;: 114.19023957392437,
+      &quot;variance_contribution_proxy&quot;: 0.3990704624068837,
+      &quot;score&quot;: 1.1038966444793992
+    },
+    {
+      &quot;parameter&quot;: &quot;sensor_bias_z_m&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: -0.44517332004733773,
+      &quot;rank_correlation&quot;: -0.6074046920821115,
+      &quot;partial_rank_correlation&quot;: -0.7409758974741973,
+      &quot;success_correlation&quot;: 0.41091912483767584,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: -0.41091912483767584,
+      &quot;tornado_low&quot;: 32.96765480265191,
+      &quot;tornado_high&quot;: 16.801121609859543,
+      &quot;tornado_delta&quot;: -16.166533192792365,
+      &quot;variance_contribution_proxy&quot;: 0.21589671503999383,
+      &quot;score&quot;: 0.9327211333151993
+    },
+    {
+      &quot;parameter&quot;: &quot;sensor_bias_x_m&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: -0.47364401374910486,
+      &quot;rank_correlation&quot;: -0.4017595307917888,
+      &quot;partial_rank_correlation&quot;: -0.014006108181023899,
+      &quot;success_correlation&quot;: 0.4602424305277436,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: -0.4602424305277436,
+      &quot;tornado_low&quot;: 30.491481559025253,
+      &quot;tornado_high&quot;: 23.315957359260373,
+      &quot;tornado_delta&quot;: -7.1755241997648795,
+      &quot;variance_contribution_proxy&quot;: 0.24439475599283447,
+      &quot;score&quot;: 0.7536421452982771
+    },
+    {
+      &quot;parameter&quot;: &quot;drag_cd&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: 0.15108971268533647,
+      &quot;rank_correlation&quot;: 0.2631964809384164,
+      &quot;partial_rank_correlation&quot;: 0.2164156673440194,
+      &quot;success_correlation&quot;: -0.12899038142054983,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: 0.12899038142054983,
+      &quot;tornado_low&quot;: 17.268014814901143,
+      &quot;tornado_high&quot;: 26.8885927126396,
+      &quot;tornado_delta&quot;: 9.620577897738457,
+      &quot;variance_contribution_proxy&quot;: 0.02486895681223469,
+      &quot;score&quot;: 0.37098893263622207
+    },
+    {
+      &quot;parameter&quot;: &quot;sensor_noise_m&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: -0.29588002301625194,
+      &quot;rank_correlation&quot;: -0.1033724340175953,
+      &quot;partial_rank_correlation&quot;: 0.2947829671480757,
+      &quot;success_correlation&quot;: 0.28191190169138386,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: -0.28191190169138386,
+      &quot;tornado_low&quot;: 22.15086822675317,
+      &quot;tornado_high&quot;: 24.06725469687044,
+      &quot;tornado_delta&quot;: 1.9163864701172706,
+      &quot;variance_contribution_proxy&quot;: 0.09537159922143977,
+      &quot;score&quot;: 0.32179042094856725
+    },
+    {
+      &quot;parameter&quot;: &quot;wind_z_mps&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: 0.0771896290516377,
+      &quot;rank_correlation&quot;: 0.20747800586510262,
+      &quot;partial_rank_correlation&quot;: 0.33594653589356804,
+      &quot;success_correlation&quot;: -0.08651360808995286,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: 0.08651360808995286,
+      &quot;tornado_low&quot;: 22.57961923901101,
+      &quot;tornado_high&quot;: 22.341603808084038,
+      &quot;tornado_delta&quot;: -0.2380154309269713,
+      &quot;variance_contribution_proxy&quot;: 0.0064909114606125275,
+      &quot;score&quot;: 0.2677012224134097
+    },
+    {
+      &quot;parameter&quot;: &quot;thrust_n&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: -0.043110908622880854,
+      &quot;rank_correlation&quot;: -0.14516129032258063,
+      &quot;partial_rank_correlation&quot;: -0.47172310817325186,
+      &quot;success_correlation&quot;: 0.010519826063434162,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: -0.010519826063434162,
+      &quot;tornado_low&quot;: 30.473148251593983,
+      &quot;tornado_high&quot;: 24.849496390094394,
+      &quot;tornado_delta&quot;: -5.623651861499589,
+      &quot;variance_contribution_proxy&quot;: 0.0020247067470527944,
+      &quot;score&quot;: 0.1693467011498796
+    },
+    {
+      &quot;parameter&quot;: &quot;mass_kg&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: 0.0999973797609758,
+      &quot;rank_correlation&quot;: 0.052419354838709666,
+      &quot;partial_rank_correlation&quot;: 0.027804139151262803,
+      &quot;success_correlation&quot;: -0.09177942040380706,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: 0.09177942040380706,
+      &quot;tornado_low&quot;: 25.103030227742273,
+      &quot;tornado_high&quot;: 29.889581858177475,
+      &quot;tornado_delta&quot;: 4.786551630435202,
+      &quot;variance_contribution_proxy&quot;: 0.010893439306577275,
+      &quot;score&quot;: 0.12536289982014934
+    },
+    {
+      &quot;parameter&quot;: &quot;wind_x_mps&quot;,
+      &quot;metric&quot;: &quot;miss_distance_m&quot;,
+      &quot;pearson&quot;: -0.030122022314582563,
+      &quot;rank_correlation&quot;: 0.0751466275659824,
+      &quot;partial_rank_correlation&quot;: -0.05826934593432024,
+      &quot;success_correlation&quot;: 0.023159113512848956,
+      &quot;failure_reason&quot;: &quot;ground_intercept&quot;,
+      &quot;failure_reason_correlation&quot;: -0.023159113512848956,
+      &quot;tornado_low&quot;: 24.119286040197032,
+      &quot;tornado_high&quot;: 24.117087288512657,
+      &quot;tornado_delta&quot;: -0.002198751684375111,
+      &quot;variance_contribution_proxy&quot;: 0.0009884530123709895,
+      &quot;score&quot;: 0.0959974171014859
+    }
+  ],
+  &quot;config_hash&quot;: &quot;ed9ea66ca34f446afbedb900bd9622a51a7bb2135277c464a6abcdc975c55a21&quot;,
+  &quot;sampler&quot;: &quot;latin_hypercube&quot;,
+  &quot;resumed_runs&quot;: 0
+}</pre>
+</body>
+</html>

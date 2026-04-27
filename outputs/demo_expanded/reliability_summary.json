@@ -1,0 +1,85 @@
+{
+  "runs": 1000,
+  "successes": 841,
+  "success_probability": 0.841,
+  "success_probability_low": 0.8170364534394214,
+  "success_probability_high": 0.8623536972692378,
+  "reliability_index": 0.9985762715293635,
+  "rare_event_failed": {
+    "event": "failed",
+    "runs": 1000,
+    "hits": 159,
+    "probability": 0.159,
+    "low": 0.13764630273076217,
+    "high": 0.1829635465605785
+  },
+  "constraint_violations": [
+    {
+      "constraint": "miss_violation_m",
+      "violations": 159,
+      "runs": 1000,
+      "probability": 0.159,
+      "low": 0.13764630273076217,
+      "high": 0.1829635465605785
+    },
+    {
+      "constraint": "qbar_violation_pa",
+      "violations": 0,
+      "runs": 1000,
+      "probability": 0.0,
+      "low": 2.168404344971009e-19,
+      "high": 0.0038267584917018463
+    },
+    {
+      "constraint": "load_violation_g",
+      "violations": 0,
+      "runs": 1000,
+      "probability": 0.0,
+      "low": 2.168404344971009e-19,
+      "high": 0.0038267584917018463
+    }
+  ],
+  "failure_modes": [
+    {
+      "failure_reason": "ground_intercept",
+      "count": 159,
+      "fraction_of_failures": 1.0,
+      "fraction_of_runs": 0.159
+    }
+  ],
+  "form": {
+    "margin_metric": "robustness_margin",
+    "beta": 1.7164322027359435,
+    "intercept_margin": 38.52882288407765,
+    "gradient_norm": 22.447040333235307,
+    "design_point": {
+      "drag_cd": 0.22489298885436168,
+      "guidance_gain": 2.671600218019395,
+      "mass_kg": 42.106474786355996,
+      "sensor_bias_x_m": -1.9081717841524268,
+      "sensor_bias_z_m": -9.257100550759768,
+      "sensor_noise_m": 9.554913997254054,
+      "thrust_n": 2195.554562531993,
+      "wind_x_mps": -1.7795357551163216,
+      "wind_z_mps": -0.227701085488185
+    },
+    "importance_factors": {
+      "drag_cd": 0.010760406267693775,
+      "guidance_gain": 0.5027335254998749,
+      "mass_kg": 0.0009753184233431128,
+      "sensor_bias_x_m": 0.005546700697433406,
+      "sensor_bias_z_m": 0.4377737824265197,
+      "sensor_noise_m": 0.0038741374468554877,
+      "thrust_n": 0.0004697162810121731,
+      "wind_x_mps": 0.030037463797258347,
+      "wind_z_mps": 0.007828949160009015
+    }
+  },
+  "sorm": {
+    "beta_sorm": 1.9361861690319628,
+    "curvature_proxy": -2.197539662960192
+  },
+  "margin_metric": "robustness_margin",
+  "margin_mean": 38.52882288407772,
+  "margin_p05": -44.478755282259
+}

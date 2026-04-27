@@ -1,0 +1,32 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 808,
+  "runs": 500,
+  "study": {
+    "name": "failure_mode_stress_test",
+    "kind": "monte_carlo"
+  },
+  "vehicle": {
+    "max_qbar_pa": 38000.0,
+    "max_load_g": 9.0
+  },
+  "mission": {
+    "success_miss_m": 120.0
+  },
+  "uncertainty": {
+    "distributions": {
+      "thrust_n": {
+        "type": "mixture",
+        "components": [
+          { "weight": 0.78, "distribution": { "type": "normal", "mean": 1500.0, "std": 70.0, "low": 1250.0, "high": 1700.0 } },
+          { "weight": 0.22, "distribution": { "type": "normal", "mean": 1120.0, "std": 80.0, "low": 850.0, "high": 1350.0 } }
+        ]
+      },
+      "burn_time_s": { "type": "choice", "values": [4.0, 6.0, 8.0], "probabilities": [0.2, 0.35, 0.45] },
+      "wind_x_mps": { "type": "uniform", "low": -20.0, "high": 28.0 },
+      "sensor_noise_m": { "type": "lognormal", "mean": 2.0, "sigma": 0.35, "low": 0.0, "high": 45.0 },
+      "actuator_time_constant_s": { "type": "uniform", "low": 0.05, "high": 0.45 },
+      "guidance_gain": { "type": "uniform", "low": 1.1, "high": 3.4 }
+    }
+  }
+}

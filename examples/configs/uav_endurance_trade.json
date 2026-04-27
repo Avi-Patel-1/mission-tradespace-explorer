@@ -1,0 +1,36 @@
+{
+  "seed": 606,
+  "runs": 400,
+  "study": {
+    "name": "uav_endurance_trade",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "latinized_sobol",
+    "chunk_size": 100
+  },
+  "mission": {
+    "model": "uav_endurance",
+    "target_range_m": 42000.0
+  },
+  "vehicle": {
+    "battery_wh": 850.0,
+    "cruise_power_w": 240.0,
+    "payload_power_w": 35.0,
+    "cruise_speed_mps": 18.0,
+    "reserve_fraction": 0.18
+  },
+  "environment": {
+    "wind_x_mps": 0.0,
+    "density_kg_m3": 1.1
+  },
+  "uncertainty": {
+    "distributions": {
+      "battery_wh": { "type": "normal", "mean": 850.0, "std": 55.0, "low": 700.0, "high": 980.0 },
+      "cruise_power_w": { "type": "truncated_normal", "mean": 240.0, "std": 30.0, "low": 180.0, "high": 330.0 },
+      "payload_power_w": { "type": "uniform", "low": 20.0, "high": 60.0 },
+      "cruise_speed_mps": { "type": "uniform", "low": 14.0, "high": 22.0 },
+      "wind_x_mps": { "type": "normal", "mean": 1.0, "std": 5.0, "low": -8.0, "high": 12.0 }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "seed": 2026,
+  "runs": 32,
+  "study": {
+    "name": "high_wind_robustness",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "stratified",
+    "chunk_size": 100
+  },
+  "mission": {
+    "dt_s": 0.05,
+    "max_time_s": 70.0,
+    "target_x_m": 3000.0,
+    "target_y_m": 0.0,
+    "target_z_m": 0.0,
+    "initial_x_m": 0.0,
+    "initial_y_m": 0.0,
+    "initial_z_m": 110.0,
+    "initial_speed_mps": 145.0,
+    "initial_flight_path_deg": 25.0,
+    "initial_heading_deg": 0.0,
+    "success_miss_m": 230.0,
+    "ground_altitude_m": 0.0
+  },
+  "vehicle": {
+    "mass_kg": 42.0,
+    "thrust_n": 2200.0,
+    "burn_time_s": 12.0,
+    "reference_area_m2": 0.032,
+    "drag_cd": 0.22,
+    "max_qbar_pa": 200000.0,
+    "max_load_g": 18.0,
+    "propellant_mass_kg": 6.5
+  },
+  "environment": {
+    "density_kg_m3": 1.1,
+    "density_scale_height_m": 8500.0,
+    "wind_x_mps": 0.0,
+    "wind_y_mps": 0.0,
+    "wind_z_mps": 0.0
+  },
+  "guidance": {
+    "guidance_gain": 2.25,
+    "loft_angle_deg": 0.0,
+    "actuator_time_constant_s": 0.12,
+    "guidance_gain_qbar_slope": 0.0,
+    "guidance_gain_speed_slope": 0.0
+  },
+  "sensors": {
+    "sensor_noise_m": 0.0,
+    "sensor_bias_x_m": 0.0,
+    "sensor_bias_y_m": 0.0,
+    "sensor_bias_z_m": 0.0
+  },
+  "uncertainty": {
+    "distributions": {
+      "wind_x_mps": {
+        "type": "normal",
+        "mean": 8.0,
+        "std": 7.0,
+        "low": -18.0,
+        "high": 26.0
+      },
+      "wind_z_mps": {
+        "type": "normal",
+        "mean": -2.0,
+        "std": 4.0,
+        "low": -14.0,
+        "high": 10.0
+      },
+      "mass_kg": {
+        "type": "triangular",
+        "low": 39.5,
+        "mode": 42.0,
+        "high": 45.0
+      },
+      "thrust_n": {
+        "type": "normal",
+        "mean": 2200.0,
+        "std": 120.0,
+        "low": 1850.0,
+        "high": 2550.0
+      },
+      "drag_cd": {
+        "type": "truncated_normal",
+        "mean": 0.22,
+        "std": 0.025,
+        "low": 0.16,
+        "high": 0.32
+      },
+      "guidance_gain": {
+        "type": "uniform",
+        "low": 1.65,
+        "high": 2.85
+      },
+      "sensor_noise_m": {
+        "type": "uniform",
+        "low": 0.0,
+        "high": 18.0
+      },
+      "sensor_bias": {
+        "type": "correlated_normal",
+        "names": [
+          "sensor_bias_x_m",
+          "sensor_bias_z_m"
+        ],
+        "mean": [
+          0.0,
+          0.0
+        ],
+        "cov": [
+          [
+            225.0,
+            45.0
+          ],
+          [
+            45.0,
+            64.0
+          ]
+        ]
+      }
+    }
+  },
+  "outputs": {
+    "write_sqlite": true,
+    "write_html": true,
+    "write_manifest": true
+  },
+  "nominal": {
+    "dt_s": 0.05,
+    "max_time_s": 70.0,
+    "target_x_m": 3000.0,
+    "target_y_m": 0.0,
+    "target_z_m": 0.0,
+    "initial_x_m": 0.0,
+    "initial_y_m": 0.0,
+    "initial_z_m": 110.0,
+    "initial_speed_mps": 145.0,
+    "initial_flight_path_deg": 25.0,
+    "initial_heading_deg": 0.0,
+    "success_miss_m": 230.0,
+    "ground_altitude_m": 0.0,
+    "mass_kg": 42.0,
+    "thrust_n": 2200.0,
+    "burn_time_s": 12.0,
+    "reference_area_m2": 0.032,
+    "drag_cd": 0.22,
+    "max_qbar_pa": 200000.0,
+    "max_load_g": 18.0,
+    "propellant_mass_kg": 6.5,
+    "density_kg_m3": 1.1,
+    "density_scale_height_m": 8500.0,
+    "wind_x_mps": 0.0,
+    "wind_y_mps": 0.0,
+    "wind_z_mps": 0.0,
+    "guidance_gain": 2.25,
+    "loft_angle_deg": 0.0,
+    "actuator_time_constant_s": 0.12,
+    "guidance_gain_qbar_slope": 0.0,
+    "guidance_gain_speed_slope": 0.0,
+    "sensor_noise_m": 0.0,
+    "sensor_bias_x_m": 0.0,
+    "sensor_bias_y_m": 0.0,
+    "sensor_bias_z_m": 0.0
+  },
+  "uncertainties": {
+    "wind_x_mps": {
+      "type": "normal",
+      "mean": 0.0,
+      "std": 6.0,
+      "low": -18.0,
+      "high": 18.0
+    },
+    "wind_z_mps": {
+      "type": "normal",
+      "mean": 0.0,
+      "std": 1.5,
+      "low": -5.0,
+      "high": 5.0
+    },
+    "mass_kg": {
+      "type": "triangular",
+      "low": 39.5,
+      "mode": 42.0,
+      "high": 45.0
+    },
+    "thrust_n": {
+      "type": "normal",
+      "mean": 2200.0,
+      "std": 120.0,
+      "low": 1850.0,
+      "high": 2550.0
+    },
+    "drag_cd": {
+      "type": "truncated_normal",
+      "mean": 0.22,
+      "std": 0.025,
+      "low": 0.16,
+      "high": 0.32
+    },
+    "guidance_gain": {
+      "type": "uniform",
+      "low": 1.65,
+      "high": 2.85
+    },
+    "sensor_noise_m": {
+      "type": "uniform",
+      "low": 0.0,
+      "high": 18.0
+    },
+    "sensor_bias": {
+      "type": "correlated_normal",
+      "names": [
+        "sensor_bias_x_m",
+        "sensor_bias_z_m"
+      ],
+      "mean": [
+        0.0,
+        0.0
+      ],
+      "cov": [
+        [
+          225.0,
+          45.0
+        ],
+        [
+          45.0,
+          64.0
+        ]
+      ]
+    }
+  },
+  "sweep": {}
+}

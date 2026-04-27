@@ -1,0 +1,33 @@
+{
+  "seed": 707,
+  "runs": 360,
+  "study": {
+    "name": "rocket_ascent_screening",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "sobol",
+    "chunk_size": 90
+  },
+  "mission": {
+    "model": "rocket_ascent",
+    "target_altitude_m": 7500.0
+  },
+  "vehicle": {
+    "mass_kg": 1200.0,
+    "thrust_n": 22000.0,
+    "burn_time_s": 35.0,
+    "propellant_mass_kg": 420.0,
+    "isp_s": 230.0,
+    "drag_loss_mps": 90.0
+  },
+  "uncertainty": {
+    "distributions": {
+      "mass_kg": { "type": "normal", "mean": 1200.0, "std": 60.0, "low": 1050.0, "high": 1350.0 },
+      "thrust_n": { "type": "normal", "mean": 22000.0, "std": 1200.0, "low": 18500.0, "high": 25000.0 },
+      "propellant_mass_kg": { "type": "uniform", "low": 370.0, "high": 470.0 },
+      "isp_s": { "type": "uniform", "low": 215.0, "high": 245.0 },
+      "drag_loss_mps": { "type": "triangular", "low": 60.0, "mode": 90.0, "high": 150.0 }
+    }
+  }
+}

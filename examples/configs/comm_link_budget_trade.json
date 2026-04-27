@@ -1,0 +1,35 @@
+{
+  "seed": 808,
+  "runs": 320,
+  "study": {
+    "name": "comm_link_budget_trade",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "orthogonal_array",
+    "chunk_size": 80
+  },
+  "mission": {
+    "model": "comm_link_budget"
+  },
+  "nominal": {
+    "tx_power_dbw": 10.0,
+    "tx_gain_dbi": 8.0,
+    "rx_gain_dbi": 12.0,
+    "frequency_hz": 2200000000.0,
+    "range_m": 120000.0,
+    "bandwidth_hz": 1000000.0,
+    "noise_figure_db": 3.0,
+    "required_snr_db": 8.0,
+    "losses_db": 2.0
+  },
+  "uncertainty": {
+    "distributions": {
+      "range_m": { "type": "uniform", "low": 60000.0, "high": 180000.0 },
+      "tx_power_dbw": { "type": "uniform", "low": 6.0, "high": 14.0 },
+      "tx_gain_dbi": { "type": "normal", "mean": 8.0, "std": 1.0, "low": 5.0, "high": 11.0 },
+      "rx_gain_dbi": { "type": "normal", "mean": 12.0, "std": 1.2, "low": 8.0, "high": 16.0 },
+      "losses_db": { "type": "triangular", "low": 1.0, "mode": 2.0, "high": 5.0 }
+    }
+  }
+}

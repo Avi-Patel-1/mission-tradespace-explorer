@@ -1,0 +1,24 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 902,
+  "runs": 600,
+  "study": {
+    "name": "sensor_bias_sensitivity",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "sobol"
+  },
+  "uncertainty": {
+    "distributions": {
+      "sensor_bias": {
+        "type": "correlated_normal",
+        "names": ["sensor_bias_x_m", "sensor_bias_y_m", "sensor_bias_z_m"],
+        "mean": [0.0, 0.0, 0.0],
+        "cov": [[400.0, 40.0, 60.0], [40.0, 144.0, 20.0], [60.0, 20.0, 100.0]]
+      },
+      "sensor_noise_m": { "type": "beta", "alpha": 2.0, "beta": 5.0, "low": 0.0, "high": 30.0 },
+      "guidance_gain": { "type": "uniform", "low": 1.7, "high": 2.9 }
+    }
+  }
+}

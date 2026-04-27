@@ -1,0 +1,42 @@
+{
+  "metric": "miss_distance_m",
+  "bootstrap_mean": {
+    "estimate": 60.60845208586801,
+    "low": 55.26565299534966,
+    "high": 65.99064662951255
+  },
+  "bootstrap_median": {
+    "estimate": 24.271748354872237,
+    "low": 23.277831150155933,
+    "high": 25.03770202701156
+  },
+  "jackknife_mean": {
+    "estimate": 60.60845208586801,
+    "bias": 7.098321930243401e-12,
+    "std_error": 2.849855294013031
+  },
+  "stopping_rule": {
+    "metric": "miss_distance_m",
+    "statistic": "mean",
+    "confidence": 0.95,
+    "tolerance": 0.05,
+    "estimate": 60.60845208586801,
+    "low": 55.26565299534966,
+    "high": 65.99064662951255,
+    "relative_width": 0.17695541240631066,
+    "stop": false
+  },
+  "success_probability": {
+    "estimate": 0.841,
+    "low": 0.8170364534394214,
+    "high": 0.8623536972692378
+  },
+  "rare_event_failed": {
+    "event": "failed",
+    "runs": 1000,
+    "hits": 159,
+    "probability": 0.159,
+    "low": 0.13764630273076217,
+    "high": 0.1829635465605785
+  }
+}

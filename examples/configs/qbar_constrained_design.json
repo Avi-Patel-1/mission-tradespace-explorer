@@ -1,0 +1,31 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 451,
+  "study": {
+    "name": "qbar_constrained_design",
+    "kind": "sweep"
+  },
+  "vehicle": {
+    "max_qbar_pa": 52000.0,
+    "max_load_g": 14.0
+  },
+  "guidance": {
+    "loft_angle_deg": 5.0
+  },
+  "sweep": {
+    "mode": "latin",
+    "samples": 42,
+    "bounds": {
+      "guidance_gain": [1.2, 3.2],
+      "thrust_n": [1250.0, 1750.0],
+      "burn_time_s": [6.0, 10.0],
+      "loft_angle_deg": [0.0, 10.0]
+    },
+    "constraints": {
+      "require_success": false,
+      "miss_distance_m": { "max": 260.0 },
+      "max_qbar_pa": { "max": 52000.0 },
+      "max_load_g": { "max": 14.0 }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 1001,
+  "runs": 600,
+  "study": {
+    "name": "reliability_report_example",
+    "kind": "reliability"
+  },
+  "sampler": {
+    "method": "latinized_sobol",
+    "chunk_size": 100
+  },
+  "mission": {
+    "success_miss_m": 180.0
+  },
+  "vehicle": {
+    "max_qbar_pa": 170000.0,
+    "max_load_g": 12.0
+  }
+}

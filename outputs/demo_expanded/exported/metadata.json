@@ -1,0 +1,8 @@
+{
+  "config_hash": "fd7375f9ae19308827c2c445257d69358ef9774785d689f0e642b0bf46a9e56d",
+  "sampler": {
+    "method": "latin_hypercube",
+    "chunk_size": 100
+  },
+  "seed": 2026
+}

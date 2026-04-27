@@ -1,0 +1,5 @@
+best_score_delta,left_runs,left_status,pareto_rows_delta,right_runs,right_status,scenario,success_rate_delta
+,32.0,complete,,32.0,complete,baseline_latin,0.0
+,90.0,complete,0.0,90.0,complete,guidance_gain_grid,0.0
+,32.0,complete,,32.0,complete,high_wind_robustness,0.0
+,32.0,complete,0.0,32.0,complete,quick_gain_optimizer,

@@ -1,0 +1,18 @@
+{
+  "metric": "miss_distance_m",
+  "rows": 9,
+  "top_driver": {
+    "parameter": "guidance_gain",
+    "metric": "miss_distance_m",
+    "rank_correlation": 0.6453679533679534,
+    "permutation_importance": 0.25323968159723,
+    "mutual_information_proxy": 0.1466262734412606,
+    "sobol_first_order_proxy": 0.3098682297076485,
+    "success_median": 2.1623451855629328,
+    "failure_median": 2.6752011513479115,
+    "success_failure_median_delta": 0.5128559657849787,
+    "elasticity": 4.866225678997144,
+    "stability_std": 0.048801617757605394,
+    "score": 1.045233908406444
+  }
+}

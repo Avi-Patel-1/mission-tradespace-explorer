@@ -1,0 +1,74 @@
+{
+  "seed": 2026,
+  "runs": 250,
+  "study": {
+    "name": "generated_uav_template",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "latin_hypercube",
+    "chunk_size": 100
+  },
+  "mission": {
+    "target_x_m": 3000.0,
+    "target_z_m": 0.0,
+    "initial_z_m": 110.0,
+    "initial_speed_mps": 145.0,
+    "initial_flight_path_deg": 25.0,
+    "success_miss_m": 230.0,
+    "model": "uav_endurance"
+  },
+  "vehicle": {
+    "mass_kg": 42.0,
+    "thrust_n": 2200.0,
+    "burn_time_s": 12.0,
+    "reference_area_m2": 0.032,
+    "drag_cd": 0.22,
+    "max_qbar_pa": 200000.0,
+    "max_load_g": 18.0
+  },
+  "environment": {
+    "density_kg_m3": 1.1,
+    "wind_x_mps": 0.0,
+    "wind_y_mps": 0.0,
+    "wind_z_mps": 0.0
+  },
+  "guidance": {
+    "guidance_gain": 2.25,
+    "actuator_time_constant_s": 0.12
+  },
+  "sensors": {
+    "sensor_noise_m": 8.0,
+    "sensor_bias_x_m": 0.0,
+    "sensor_bias_z_m": 0.0
+  },
+  "uncertainty": {
+    "distributions": {
+      "wind_x_mps": {
+        "type": "normal",
+        "mean": 0.0,
+        "std": 6.0,
+        "low": -18.0,
+        "high": 18.0
+      },
+      "mass_kg": {
+        "type": "triangular",
+        "low": 39.5,
+        "mode": 42.0,
+        "high": 45.0
+      },
+      "thrust_n": {
+        "type": "normal",
+        "mean": 2200.0,
+        "std": 120.0,
+        "low": 1850.0,
+        "high": 2550.0
+      },
+      "sensor_noise_m": {
+        "type": "uniform",
+        "low": 0.0,
+        "high": 18.0
+      }
+    }
+  }
+}

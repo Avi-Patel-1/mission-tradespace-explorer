@@ -1,0 +1,29 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 1234,
+  "study": {
+    "name": "pareto_design_exploration",
+    "kind": "sweep"
+  },
+  "sweep": {
+    "mode": "random",
+    "samples": 64,
+    "bounds": {
+      "guidance_gain": [1.2, 3.4],
+      "thrust_n": [1250.0, 1850.0],
+      "mass_kg": [36.0, 52.0],
+      "burn_time_s": [5.5, 10.5],
+      "reference_area_m2": [0.025, 0.045]
+    },
+    "objectives": [
+      { "metric": "miss_distance_m", "sense": "min" },
+      { "metric": "impulse_n_s", "sense": "min" },
+      { "metric": "robustness_margin", "sense": "max" }
+    ],
+    "constraints": {
+      "require_success": false,
+      "miss_distance_m": { "max": 280.0 },
+      "max_qbar_pa": { "max": 200000.0 }
+    }
+  }
+}

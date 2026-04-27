@@ -1,0 +1,13 @@
+<svg width="760" height="280" viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="100%" height="100%" fill="white"/>
+<text x="44" y="28" font-family="Arial" font-size="18" font-weight="700">Max Dynamic Pressure Distribution</text>
+<rect x="44.0" y="208.6" width="110.0" height="27.4" fill="#7c3aed"/>
+<rect x="156.0" y="194.9" width="110.0" height="41.1" fill="#7c3aed"/>
+<rect x="268.0" y="222.3" width="110.0" height="13.7" fill="#7c3aed"/>
+<rect x="380.0" y="194.9" width="110.0" height="41.1" fill="#7c3aed"/>
+<rect x="492.0" y="44.0" width="110.0" height="192.0" fill="#7c3aed"/>
+<rect x="604.0" y="112.6" width="110.0" height="123.4" fill="#7c3aed"/>
+<line x1="44" y1="236" x2="716" y2="236" stroke="#1f2937"/>
+<text x="44" y="268" font-family="Arial" font-size="12">130298.84</text>
+<text x="624" y="268" font-family="Arial" font-size="12">152758.67</text>
+</svg>

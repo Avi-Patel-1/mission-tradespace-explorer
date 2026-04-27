@@ -1,0 +1,5 @@
+best_score,command,config_hash,error,out_dir,pareto_rows,runs,scenario,status,success_rate
+,run,ed9ea66ca34f446afbedb900bd9622a51a7bb2135277c464a6abcdc975c55a21,,/Users/avipatel/Documents/New project 3/monte_carlo_trade_space_explorer/outputs/campaign_resume_example/baseline_latin,,32,baseline_latin,complete,0.8125
+,sweep,ecad5b88b067668915c580339997fd6c62d2abf7d8b1157fd37b62b563ababe0,,/Users/avipatel/Documents/New project 3/monte_carlo_trade_space_explorer/outputs/campaign_resume_example/guidance_gain_grid,6,90,guidance_gain_grid,complete,1.0
+,run,c84f20bd4dba53e06eeb55f3062eacc64ab254e4dbb722383e0f48a4a6f8e25d,,/Users/avipatel/Documents/New project 3/monte_carlo_trade_space_explorer/outputs/campaign_resume_example/high_wind_robustness,,32,high_wind_robustness,complete,0.84375
+,optimize,cd4a8430195edd9d8db4e64c964faf03eba0acc4c601ffa61052b92223d8e147,,/Users/avipatel/Documents/New project 3/monte_carlo_trade_space_explorer/outputs/campaign_resume_example/quick_gain_optimizer,4,32,quick_gain_optimizer,complete,

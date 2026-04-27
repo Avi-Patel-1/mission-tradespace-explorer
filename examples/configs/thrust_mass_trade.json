@@ -1,0 +1,21 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 311,
+  "study": {
+    "name": "thrust_mass_trade",
+    "kind": "sweep"
+  },
+  "sweep": {
+    "mode": "grid",
+    "values": {
+      "thrust_n": [1380.0, 1500.0, 1620.0, 1740.0],
+      "mass_kg": [38.0, 42.0, 46.0, 50.0],
+      "burn_time_s": [7.0, 8.0, 9.0]
+    },
+    "constraints": {
+      "require_success": false,
+      "miss_distance_m": { "max": 260.0 },
+      "max_load_g": { "max": 18.0 }
+    }
+  }
+}

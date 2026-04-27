@@ -1,0 +1,128 @@
+{
+  "study_name": "guidance_gain_grid",
+  "status": "complete",
+  "config_hash": "ecad5b88b067668915c580339997fd6c62d2abf7d8b1157fd37b62b563ababe0",
+  "seed": 77,
+  "sweep": {
+    "mode": "grid",
+    "uncertainty_runs": 6,
+    "values": {
+      "guidance_gain": [
+        1.4,
+        1.8,
+        2.2,
+        2.6,
+        3.0
+      ],
+      "thrust_n": [
+        2000.0,
+        2200.0,
+        2400.0
+      ]
+    },
+    "constraints": {
+      "require_success": false,
+      "miss_distance_m": {
+        "max": 230.0
+      },
+      "max_qbar_pa": {
+        "max": 200000.0
+      }
+    }
+  },
+  "cases": 15,
+  "rows": 90,
+  "case_records": [
+    {
+      "case": 0,
+      "status": "complete",
+      "guidance_gain": 1.4,
+      "thrust_n": 2000.0
+    },
+    {
+      "case": 1,
+      "status": "complete",
+      "guidance_gain": 1.4,
+      "thrust_n": 2200.0
+    },
+    {
+      "case": 2,
+      "status": "complete",
+      "guidance_gain": 1.4,
+      "thrust_n": 2400.0
+    },
+    {
+      "case": 3,
+      "status": "complete",
+      "guidance_gain": 1.8,
+      "thrust_n": 2000.0
+    },
+    {
+      "case": 4,
+      "status": "complete",
+      "guidance_gain": 1.8,
+      "thrust_n": 2200.0
+    },
+    {
+      "case": 5,
+      "status": "complete",
+      "guidance_gain": 1.8,
+      "thrust_n": 2400.0
+    },
+    {
+      "case": 6,
+      "status": "complete",
+      "guidance_gain": 2.2,
+      "thrust_n": 2000.0
+    },
+    {
+      "case": 7,
+      "status": "complete",
+      "guidance_gain": 2.2,
+      "thrust_n": 2200.0
+    },
+    {
+      "case": 8,
+      "status": "complete",
+      "guidance_gain": 2.2,
+      "thrust_n": 2400.0
+    },
+    {
+      "case": 9,
+      "status": "complete",
+      "guidance_gain": 2.6,
+      "thrust_n": 2000.0
+    },
+    {
+      "case": 10,
+      "status": "complete",
+      "guidance_gain": 2.6,
+      "thrust_n": 2200.0
+    },
+    {
+      "case": 11,
+      "status": "complete",
+      "guidance_gain": 2.6,
+      "thrust_n": 2400.0
+    },
+    {
+      "case": 12,
+      "status": "complete",
+      "guidance_gain": 3.0,
+      "thrust_n": 2000.0
+    },
+    {
+      "case": 13,
+      "status": "complete",
+      "guidance_gain": 3.0,
+      "thrust_n": 2200.0
+    },
+    {
+      "case": 14,
+      "status": "complete",
+      "guidance_gain": 3.0,
+      "thrust_n": 2400.0
+    }
+  ],
+  "updated_utc": "2026-04-27T01:37:06.734564+00:00"
+}

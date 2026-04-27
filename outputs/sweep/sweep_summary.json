@@ -1,0 +1,16 @@
+{
+  "cases": 15,
+  "best_case": {
+    "case": 14,
+    "guidance_gain": 3.0,
+    "thrust_n": 1670.0,
+    "miss_distance_m": 195.00213579888978,
+    "time_of_flight_s": 12.750000000000046,
+    "max_qbar_pa": 88120.7243265326,
+    "impulse_n_s": 13443.5,
+    "final_x_m": 4000.001132253823,
+    "final_z_m": -405.81894649420565,
+    "success": true,
+    "failed": false
+  }
+}

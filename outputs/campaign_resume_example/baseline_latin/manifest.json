@@ -1,0 +1,174 @@
+{
+  "study_name": "baseline_latin",
+  "status": "complete",
+  "config_hash": "ed9ea66ca34f446afbedb900bd9622a51a7bb2135277c464a6abcdc975c55a21",
+  "seed": 2026,
+  "sampler": {
+    "method": "latin_hypercube",
+    "chunk_size": 100
+  },
+  "runs": 32,
+  "run_records": [
+    {
+      "run": 0,
+      "seed": 106755,
+      "status": "complete"
+    },
+    {
+      "run": 1,
+      "seed": 114674,
+      "status": "complete"
+    },
+    {
+      "run": 2,
+      "seed": 122593,
+      "status": "complete"
+    },
+    {
+      "run": 3,
+      "seed": 130512,
+      "status": "complete"
+    },
+    {
+      "run": 4,
+      "seed": 138431,
+      "status": "complete"
+    },
+    {
+      "run": 5,
+      "seed": 146350,
+      "status": "complete"
+    },
+    {
+      "run": 6,
+      "seed": 154269,
+      "status": "complete"
+    },
+    {
+      "run": 7,
+      "seed": 162188,
+      "status": "complete"
+    },
+    {
+      "run": 8,
+      "seed": 170107,
+      "status": "complete"
+    },
+    {
+      "run": 9,
+      "seed": 178026,
+      "status": "complete"
+    },
+    {
+      "run": 10,
+      "seed": 185945,
+      "status": "complete"
+    },
+    {
+      "run": 11,
+      "seed": 193864,
+      "status": "complete"
+    },
+    {
+      "run": 12,
+      "seed": 201783,
+      "status": "complete"
+    },
+    {
+      "run": 13,
+      "seed": 209702,
+      "status": "complete"
+    },
+    {
+      "run": 14,
+      "seed": 217621,
+      "status": "complete"
+    },
+    {
+      "run": 15,
+      "seed": 225540,
+      "status": "complete"
+    },
+    {
+      "run": 16,
+      "seed": 233459,
+      "status": "complete"
+    },
+    {
+      "run": 17,
+      "seed": 241378,
+      "status": "complete"
+    },
+    {
+      "run": 18,
+      "seed": 249297,
+      "status": "complete"
+    },
+    {
+      "run": 19,
+      "seed": 257216,
+      "status": "complete"
+    },
+    {
+      "run": 20,
+      "seed": 265135,
+      "status": "complete"
+    },
+    {
+      "run": 21,
+      "seed": 273054,
+      "status": "complete"
+    },
+    {
+      "run": 22,
+      "seed": 280973,
+      "status": "complete"
+    },
+    {
+      "run": 23,
+      "seed": 288892,
+      "status": "complete"
+    },
+    {
+      "run": 24,
+      "seed": 296811,
+      "status": "complete"
+    },
+    {
+      "run": 25,
+      "seed": 304730,
+      "status": "complete"
+    },
+    {
+      "run": 26,
+      "seed": 312649,
+      "status": "complete"
+    },
+    {
+      "run": 27,
+      "seed": 320568,
+      "status": "complete"
+    },
+    {
+      "run": 28,
+      "seed": 328487,
+      "status": "complete"
+    },
+    {
+      "run": 29,
+      "seed": 336406,
+      "status": "complete"
+    },
+    {
+      "run": 30,
+      "seed": 344325,
+      "status": "complete"
+    },
+    {
+      "run": 31,
+      "seed": 352244,
+      "status": "complete"
+    }
+  ],
+  "updated_utc": "2026-04-27T01:36:58.152811+00:00"
+}

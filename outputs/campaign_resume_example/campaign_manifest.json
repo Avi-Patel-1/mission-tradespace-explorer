@@ -1,0 +1,56 @@
+{
+  "campaign": {
+    "name": "resume_campaign_example"
+  },
+  "out_dir": "../../outputs/campaign_resume_example",
+  "base_config": "../configs/mission_mc.json",
+  "scenarios": [
+    {
+      "name": "baseline_latin",
+      "command": "run",
+      "runs": 32,
+      "sampler": "latin_hypercube"
+    },
+    {
+      "name": "high_wind_robustness",
+      "command": "run",
+      "runs": 32,
+      "overrides": {
+        "sampler": {
+          "method": "stratified"
+        },
+        "uncertainty": {
+          "distributions": {
+            "wind_x_mps": {
+              "type": "normal",
+              "mean": 8.0,
+              "std": 7.0,
+              "low": -18.0,
+              "high": 26.0
+            },
+            "wind_z_mps": {
+              "type": "normal",
+              "mean": -2.0,
+              "std": 4.0,
+              "low": -14.0,
+              "high": 10.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "guidance_gain_grid",
+      "command": "sweep",
+      "config": "../configs/guidance_gain_sweep.json"
+    },
+    {
+      "name": "quick_gain_optimizer",
+      "command": "optimize",
+      "config": "../configs/guidance_gain_optimization.json",
+      "method": "random",
+      "iterations": 4,
+      "population": 8
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 77,
+  "runs": 120,
+  "study": {
+    "name": "guidance_gain_sweep",
+    "kind": "sweep"
+  },
+  "sampler": {
+    "method": "monte_carlo"
+  },
+  "uncertainty": {
+    "distributions": {
+      "wind_x_mps": { "type": "normal", "mean": 4.0, "std": 4.0, "low": -8.0, "high": 16.0 },
+      "sensor_noise_m": { "type": "uniform", "low": 0.0, "high": 10.0 }
+    }
+  },
+  "sweep": {
+    "mode": "grid",
+    "uncertainty_runs": 6,
+    "values": {
+      "guidance_gain": [1.4, 1.8, 2.2, 2.6, 3.0],
+      "thrust_n": [2000.0, 2200.0, 2400.0]
+    },
+    "constraints": {
+      "require_success": false,
+      "miss_distance_m": { "max": 230.0 },
+      "max_qbar_pa": { "max": 200000.0 }
+    }
+  }
+}

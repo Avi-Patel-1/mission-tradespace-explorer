@@ -1,0 +1,21 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 515,
+  "runs": 300,
+  "study": {
+    "name": "empirical_wind_table",
+    "kind": "monte_carlo"
+  },
+  "sampler": {
+    "method": "monte_carlo",
+    "chunk_size": 75
+  },
+  "uncertainty": {
+    "distributions": {
+      "wind_x_mps": { "type": "table", "path": "../data/wind_cases.csv", "column": "wind_x_mps", "weight_column": "weight" },
+      "wind_z_mps": { "type": "table", "path": "../data/wind_cases.csv", "column": "wind_z_mps", "weight_column": "weight" },
+      "sensor_noise_m": { "type": "uniform", "low": 2.0, "high": 16.0 },
+      "guidance_gain": { "type": "uniform", "low": 1.8, "high": 2.7 }
+    }
+  }
+}

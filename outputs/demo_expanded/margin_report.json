@@ -1,0 +1,12 @@
+{
+  "rows": 9,
+  "top_margin_driver": {
+    "parameter": "guidance_gain",
+    "margin_metric": "robustness_margin",
+    "correlation": -0.45191272659404846,
+    "low_decile_margin": 53.94590282502993,
+    "high_decile_margin": -8.749014590475312,
+    "margin_shift": -62.694917415505245,
+    "score": 1.078861900749101
+  }
+}

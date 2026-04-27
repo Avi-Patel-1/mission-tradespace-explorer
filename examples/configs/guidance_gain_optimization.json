@@ -1,0 +1,26 @@
+{
+  "extends": "mission_mc.json",
+  "seed": 1112,
+  "runs": 200,
+  "study": {
+    "name": "guidance_gain_optimization",
+    "kind": "optimization"
+  },
+  "optimize": {
+    "variables": {
+      "guidance_gain": { "bounds": [1.4, 3.1] },
+      "thrust_n": { "bounds": [1900.0, 2500.0] },
+      "burn_time_s": { "bounds": [9.5, 13.0] }
+    },
+    "objectives": [
+      { "metric": "miss_distance_m", "sense": "min", "weight": 1.0 },
+      { "metric": "impulse_n_s", "sense": "min", "weight": 0.001 },
+      { "metric": "robustness_margin", "sense": "max", "weight": 0.15 }
+    ],
+    "constraints": {
+      "require_success": false,
+      "max_qbar_pa": { "max": 200000.0 },
+      "max_load_g": { "max": 18.0 }
+    }
+  }
+}
