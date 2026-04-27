@@ -23,7 +23,6 @@ A dependency-light mission-analysis toolkit for Monte Carlo performance studies,
 ## Quick Start
 
 ```bash
-cd "/Users/avipatel/Documents/New project 3/monte_carlo_trade_space_explorer"
 python3 -m unittest discover -s tests
 python3 -m tradespace validate --config examples/configs/mission_mc.json
 python3 -m tradespace inspect-config --config examples/configs/mission_mc.json
